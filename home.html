@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+body {
+  background-color: aqua;
+}
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+th{
+    color: blueviolet;
+}
+.container {
+  position: relative;
+  width: 50%;
+  align-items: center;
+  padding-left: 450px;
+}
+
+.image {
+  display: block;
+  width: 450px;
+  height: auto;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 450px;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: palevioletred;
+  padding-right: 400px;
+
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.form{
+    align-items: center;
+    padding-left: 500px;
+}
+</style>
+</head>
+<body>
+
+<h2>FRIENDSHIP</h2>
+<h4>"Things are never quite as scary when you've got abest friend."</h4>
+<div class="container">
+    <img src="top.jpg"  class="image">
+    <div class="overlay">
+      <div class="text">Hi friend's</div>
+    </div>
+  </div>
+<table>
+  <tr>
+    <th>NAME</th>
+    <th>NICK NAME</th>
+    <th>WHARE</th>
+  </tr>
+  <tr>
+    <td>Malathi</td>
+    <td>Malu</td>
+    <td>School</td>
+  </tr>
+  <tr>
+    <td>Priya</td>
+    <td>Sweety</td>
+    <td>church</td>
+  </tr>
+  <tr>
+    <td>Prabha</td>
+    <td>Maries</td>
+    <td>collage</td>
+  </tr>
+  <tr>
+    <td>Divya</td>
+    <td>Papu</td>
+    <td>School</td>
+  </tr>
+  <tr>
+    <td>Sathish</td>
+    <td>frd</td>
+    <td>Home</td>
+  </tr>
+  <tr>
+    <td>Mathi</td>
+    <td>snake</td>
+    <td>collage</td>
+  </tr>
+</table>
+<div class="form">
+<h2>You Are Ready To Add My Friend's List</h2>
+<p>Fill The Form . Add Now My Friend's List</p>
+<form>
+    <label for="fname">NAME</label><br>
+    <input type="text" id="fname" name="fname" value="Enter Your Name"><br>
+    <label for="lname">Nick Name</label><br>
+    <input type="text" id="lname" name="lname" value="Enter Your Nick Name">
+    <p>Where Did You See Me..?</p>
+    <input type="checkbox"  name="friend" value="School">
+    <label for="vehicle1">I am School Friend</label><br>
+    <input type="checkbox"  name="friend" value="College">
+    <label for="vehicle2"> I am College Friend</label><br>
+    <input type="checkbox" name="friend" value="church">
+    <label for="vehicle3"> I am Church Friend</label><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
